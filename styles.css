@@ -1,0 +1,164 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    /* background-color: rgb(34, 31, 31); */
+
+}
+.banner1,.banner2,.banner3,.banner4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+img {
+    /* width: 120%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoom-out 3s linear infinite; */
+}
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+
+    }
+}
+
+.text-box{
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #fff;
+
+}
+.text-box h1 {
+    margin-bottom: 40px;
+    
+}
+
+.banner1 {
+    animation: bmwHome 12s linear infinite ;
+
+}
+.banner2 {
+    animation: bmwHome2 12s linear infinite ;
+
+}
+.banner3 {
+    animation: bmwHome3 12s linear infinite ;
+
+}
+.banner4 {
+    animation: bmwHome4 12s linear infinite ;
+
+}
+@keyframes bmwHome {
+    0%{
+        visibility: visible;       
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;      
+    }
+    75%{
+        visibility: hidden;      
+    }
+    100%{
+        visibility: visible;      
+    }
+} 
+@keyframes bmwHome2 {
+    0%{
+        visibility: hidden;       
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;      
+    }
+    75%{
+        visibility: hidden;      
+    }
+    100%{
+        visibility: hidden;      
+    }
+}
+@keyframes bmwHome3 {
+    0%{
+        visibility: hidden;       
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;      
+    }
+    75%{
+        visibility: visible;      
+    }
+    100%{
+        visibility: hidden;      
+    }
+}
+@keyframes bmwHome4 {
+    0%{
+        visibility: hidden;       
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;      
+    }
+    75%{
+        visibility: hidden;      
+    }
+    100%{
+        visibility: visible;      
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color:#24252A ; */
+}
+li,a,button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center;      */
+}
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    color: white;
+
+    width: 100% !important;
+}
+.nav_links{
+    display: flex;
+    list-style-type: none;
+    width: 100vw;
+}
+.nav_links li{
+    width: 100px;
+    padding: 30px;
+}
